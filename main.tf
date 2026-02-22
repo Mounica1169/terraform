@@ -1,5 +1,5 @@
 provider "aws" {
-    region="us-east-1"
+region="us-east-1"
 }
 
 resource "aws_instance" "one"{
@@ -9,7 +9,7 @@ Name="github_instance"
 
 ami=var.ami_id
 instance_type=var.itype
-key_name=
+key_name="MY_KP"
 root_block_device{
 volume_size=var.volume
 }
